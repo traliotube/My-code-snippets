@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" type="image/png" href="icon\greetings.ico"/>
+  <title>Greetings using html</title>    
+  <body>
+    <h1 class="heading"">Greeting using name</h1>
+    <button class="try" onclick="myFunction()">Try It</button>
+
+    <h2 class="output" id="output"></h2>
+
+    <script>
+      function myFunction() {
+        var txt;
+        var person = prompt("Please enter your name:", "Bunny");
+        if (person == null || person == "") {
+          txt = "User cancelled the prompt.";
+        } else {
+          txt = "Hello " + person + "! How are you today?";
+        }
+        document.getElementById("output").innerHTML = txt;
+      }
+    </script>
+    <style>
+      .try {
+        background-color: yellow;
+        cursor: pointer;
+        width: 40mm;
+        height: 15mm;
+        font-size: 10mm;
+        color: rgb(2, 154, 255);
+        font-weight: bold;
+        margin-left: 45%;
+        margin-bottom: 20mm;
+      }
+      .heading {
+          color: rgb(0, 217, 255);
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          margin-bottom: 20mm;       
+      }
+      .output {
+          color: darkorange;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .try:hover{
+        background-color: greenyellow;
+      }
+    </style> 
+    </html>
+  </body>
+

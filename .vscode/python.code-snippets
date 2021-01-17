@@ -1,0 +1,22 @@
+{
+	"bot command": {
+		"prefix": "bot",
+		"body": [
+		  "@bot.command",
+		  "async def ${1:command}(ctx):",
+		  "    await ctx.send('${2:text}')"
+		],
+		"description": "bot command"
+	  },
+	  "Default embedded": {
+		"prefix": "embed",
+		"body": [
+		  "embed = discord.Embed(",
+		  "        tittle='${1:tittle}',",
+		  "        description='${2:descrip}',",
+		  "        colour=discord.colour.${3:colour}())",
+		  "embeded.addfield(name=\"${4:namef1}\", value=\"${5:value}\")"
+		],
+		"description": "Default embedded"
+	  }
+}

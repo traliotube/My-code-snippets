@@ -39,7 +39,7 @@ async def hyd(ctx):
 
 
 @bot.command()
-async def helppy(ctx):
+async def py(ctx):
     embed = discord.Embed(
         tittle='discord.py Help websites', description='Help for discord.py with different websites', colour=discord.Color.blue())
     embed.set_author(name="Bunny Pranav",

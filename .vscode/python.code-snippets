@@ -2,9 +2,9 @@
 	"bot command": {
 		"prefix": "bot",
 		"body": [
-		  "@bot.command",
-		  "async def ${1:command}(ctx):",
-		  "    await ctx.send('${2:text}')"
+		  "@bot.command()",
+		  "async def ${1:command}(ctx, ${2:parameter}):",
+		  "    await ctx.send('${3:text}')"
 		],
 		"description": "bot command"
 	  },

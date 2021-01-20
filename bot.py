@@ -1,4 +1,5 @@
 import discord
+import random
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
@@ -53,4 +54,15 @@ async def py(ctx):
                     value='https://repl.it/@BunnyPranav/Bunnys-Bot#main.py')
     await ctx.send(embed=embed)
 
-bot.run('Nzk4MTk4MzYxMDY0NjAzNzEx.X_xiJw.JRqsIZ3lV1SvuhGEuKaMrOJEo4Q')
+
+@bot.command(aliases=['len'])
+async def _len(ctx, text='example'):
+    await ctx.send(f'The length of {text} is {len(text)}')
+
+
+@bot.command()
+async def dice(ctx):
+    dice_no = random.randint(1, 6)
+    await ctx.send(f'You have got {dice_no} in the dice!!!')
+
+bot.run('')
